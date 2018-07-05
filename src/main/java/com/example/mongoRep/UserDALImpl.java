@@ -38,7 +38,7 @@ public class UserDALImpl implements UserDAL {
 		Query query = new Query();
 		query.addCriteria(Criteria.where("userId").is(userId));
 		User user = mongoTemplate.findOne(query, User.class);
-		return user != null ? user.getUserSettings() : "User not found.";
+		return user != null ? user.getUserSettings() : "User not found yaar get it no.";
 	}
 
 	@Override
